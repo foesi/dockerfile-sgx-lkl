@@ -2,9 +2,9 @@ FROM alpine:latest
 
 MAINTAINER Florian Österreich <florian.oesterreich@ossmail.de>
 
-RUN apk add git make gcc g++ bc python xutils-dev bison flex libgcrypt20-dev libjson-c-dev \
-    automake autopoint autoconf pkgconf libtool libcurl4-openssl-dev libprotobuf-dev libprotobuf-c-dev protobuf-compiler \
-    protobuf-c-compiler libssl-dev wget unzip
+RUN apk add git make gcc g++ bc python libx11-dev bison flex libgcrypt json-c-dev \
+    automake autopoint autoconf pkgconf libtool curl-dev protobuf-dev protobuf-c-dev protobuf \
+    protobuf-c openssl-dev wget unzip
 
 RUN wget https://github.com/lsds/sgx-lkl/archive/master.zip && unzip master.zip && cd sgx-lkl-master
 
