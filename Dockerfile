@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM sconecuratedimages/utils:intel-sgx-sdk-2.5
 
 MAINTAINER Florian Österreich <florian.oesterreich@ossmail.de>
 
